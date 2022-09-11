@@ -1,0 +1,32 @@
+@import "../../styles/color-themes";
+@import "../../styles/media-queries";
+@import "../../styles/font-size";
+@import "../../styles/variables";
+
+.title {
+  @include theme() {
+    color: get-color("text");
+  }
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: $headline4-font-size;
+  font-weight: 700;
+  margin-bottom: -5px;
+}
+.subtitle {
+  @include theme() {
+    color: get-color("text");
+  }
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: -5px;
+}
+.mapcontainer{
+ margin-top: 10px;
+}
+
+.leaflet-container {
+  width: 800px;
+  margin-top: 50px;
+  height: 500px;
+}
